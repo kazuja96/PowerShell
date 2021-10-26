@@ -1,0 +1,2 @@
+$results = Get-Process
+$results | Export-Csv -Path C:\temp\process.csv
