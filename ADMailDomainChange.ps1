@@ -1,7 +1,6 @@
 ﻿#Skrypt zmieniający domenę w adresach mailowych wszystkich użytkowników w Active Directory
 
 Import-Module ActiveDirectory
-
 #Importuję moduł Active directory.
 #Jest niezbędny do uruchomienia komend Get-ADUser oraz Set-ADUser.#>
 
