@@ -1,9 +1,5 @@
 #Skrypt eksportujący listę procesów do pliku CSV.
 
-Import-Module ActiveDirectory
-#Importuję moduł Active directory.
-#Jest niezbędny do uruchomienia komend Get-ADUser oraz Set-ADUser.
-
 $results = Get-Process
 #Tworzę zmienną results.
 #Zmienna zawiera listę procesów.
