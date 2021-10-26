@@ -1,8 +1,9 @@
 ﻿#Skrypt zmieniający domenę w adresach mailowych wszystkich użytkowników w Active Directory
+ #W tym przykładzie ForEach traktowana jest jako oddzielna instrukcja.
 
 Import-Module ActiveDirectory
 #Importuję moduł Active directory.
-#Jest niezbędny do uruchomienia komend Get-ADUser oraz Set-ADUser.#>
+#Jest niezbędny do uruchomienia komend Get-ADUser oraz Set-ADUser.
 
 $ADusers = Get-ADUser -Filter *
 #Tworzę kolekcję ADusers. Zawiera ona wszystkich użytkowników w AD.
