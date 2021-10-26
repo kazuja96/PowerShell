@@ -9,7 +9,8 @@ $ADusers = Get-ADUser -Filter *
 #Tworzę kolekcję ADusers. Zawiera ona wszystkich użytkowników w AD.
 
 
-foreach ($ADuser in $ADusers) #Rozpoczynam pętlę foreach dla kolekcji ADusers. Każdy pojedyńczy obiekt oznaczamy jako ADuser.
+#Rozpoczynam pętlę foreach dla kolekcji ADusers. Każdy pojedyńczy obiekt oznaczamy jako ADuser.
+foreach ($ADuser in $ADusers)
 {
     $email = $ADuser.samaccountname + '@domena.pl'
     #Tworzę zmienną email. 
