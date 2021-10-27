@@ -6,4 +6,4 @@ $process = Get-Process
 
 $process | Export-Csv -Path C:\temp\process.csv
 #Przekazanie $process za pomocą pipeline | do komedy Export-Csv.
-#Komenda Export-Csv zapisuje zmienną $process w lokalizacji C:\temp\ jako plik process.csv
+#Komenda Export-Csv zapisuje zmienną $process w lokalizacji C:\temp\ jako plik process.csv.
