@@ -6,7 +6,7 @@ Import-Module ActiveDirectory
 
 
 $NumbersList = Import-Csv -Path C:\temp\numbers.csv
-#Import pliku numbers.csv, znajdujący się w lokalizacji C:\temp\numbers.csv do $NumbersList.
+#Import pliku numbers.csv, znajdującego się w lokalizacji C:\temp\numbers.csv do $NumbersList.
 
 #Rozpoczęcie pętli foreach.
 #Pętla wykonuje się dla każdego wiersza w pliku numbers.csv.
