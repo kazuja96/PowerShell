@@ -1,7 +1,7 @@
 #Skrypt eksportujący listę procesów do pliku CSV.
 
 $process = Get-Process
-#Tworzenie zmiennej process.
+#Tworzenie zmiennej $process.
 #Zmienna zawiera listę procesów.
 
 $process | Export-Csv -Path C:\temp\process.csv
