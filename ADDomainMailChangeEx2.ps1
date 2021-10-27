@@ -2,7 +2,6 @@
 #W tym przykładzie użyję ForEach-Object.
 
 Import-Module ActiveDirectory
-
 #Importuję moduł Active directory.
 #Jest niezbędny do uruchomienia komend Get-ADUser oraz Set-ADUser.
 
