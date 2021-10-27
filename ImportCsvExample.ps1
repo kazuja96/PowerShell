@@ -13,6 +13,6 @@ $NumbersList = Import-Csv -Path C:\temp\numbers.csv
 foreach ($Number in $NumbersList){
 
 Set-ADUser -Identity $Number.samaccountname -MobilePhone $Number.telephonenumber
-#Przypisanie użytkownikowi w AD numer telefonu z zaimportowanego pliku.
+#Przypisanie użytkownikowi w AD numeru telefonu z zaimportowanego pliku.
 
 }
