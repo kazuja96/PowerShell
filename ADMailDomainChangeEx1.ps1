@@ -6,14 +6,14 @@ Import-Module ActiveDirectory
 #Jest niezbędny do uruchomienia komend Get-ADUser oraz Set-ADUser.
 
 $ADusers = Get-ADUser -Filter *
-#Tworzenie kolekcji ADusers. Zawiera ona wszystkich użytkowników w AD.
+#Tworzenie kolekcji $ADusers. Zawiera ona wszystkich użytkowników w AD.
 
 
-#Pętla foreach dla kolekcji ADusers. Każdy pojedyńczy obiekt oznaczony jako ADuser.
+#Pętla foreach dla kolekcji $ADusers. Każdy pojedyńczy obiekt oznaczony jako $ADuser.
 foreach ($ADuser in $ADusers)
 {
     $email = $ADuser.samaccountname + '@domena.pl'
-    #Tworzenie zmiennej email. 
+    #Tworzenie zmiennej $email. 
     #Zmienna zawiera nazwę użytkownika wraz z dodanym przyrostkiem @domena.pl. 
     #np. dla użytkownika jan.kowalski będzie to jan.kowalski@domena.pl
 
