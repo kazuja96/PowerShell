@@ -1,4 +1,4 @@
-#Skrypt zmieniający domenę w adresach mailowych wszystkich użytkowników w Active Directory
+#Skrypt zmieniający domenę w adresach mailowych wszystkich użytkowników w Active Directory.
 #W tym przykładzie ForEach traktowana jest jako oddzielna instrukcja.
 
 Import-Module ActiveDirectory
@@ -15,7 +15,7 @@ foreach ($ADuser in $ADusers)
     $email = $ADuser.samaccountname + '@domena.pl'
     #Tworzenie zmiennej $email. 
     #Zmienna zawiera nazwę użytkownika wraz z dodanym przyrostkiem @domena.pl. 
-    #np. dla użytkownika jan.kowalski będzie to jan.kowalski@domena.pl
+    #np. dla użytkownika jan.kowalski będzie to jan.kowalski@domena.pl.
 
     Set-ADUser -Identity $ADuser.samaccountname -EmailAddress $email
     #Ustawienie wyżej utworzonej zmiennej jako adres mailowy.
