@@ -1,6 +1,6 @@
 #Skrypt wyświetlający zawartość folderu $path wraz z podfolderami
 
-$path = 'C:\Users\support\desktop\*.*'
+$path = 'C:\Test\*.*'
 #W zmiennej path umieszczona jest lokalizacja, która będzie przeszukiwana
 
 
